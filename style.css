@@ -1,0 +1,101 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #17a2b8;
+}
+
+.panel-1{
+    border-style: solid;
+    border-width: 5px;
+    border-color: black;
+    box-shadow: slategray;
+}
+
+.News-list{
+    overflow: visible;
+    float: inline-end;
+    list-style-type: wrap;
+}
+
+.Show-news{
+    overflow: visible;
+}
+
+.navbar {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 48px;
+    z-index: 1;
+    background-color: blue;
+}
+
+.navbar-brand {
+    padding: 0cm;
+    margin: 0cm;
+}
+
+.bigHeading {
+    position: absolute;
+    display: inline;
+    font-style: italic;
+    background-color: red;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 10mm;
+    font-weight: bolder;
+    margin: 0cm;
+    padding: 0cm;
+    z-index: 13;
+}
+
+.ticker-wrapper{
+    position: relative;
+    z-index: 2;
+    background-color: BLUE;
+    height: 50px;
+    text-transform: uppercase;
+    color: white;
+    font-weight:500 ;
+    font-size: 25px;
+    justify-content: center;
+    letter-spacing: 2px; 
+    align-items: center;
+    display: inline-flex;
+    left: 202px;
+}
+
+.text-update {
+    z-index: 1;
+    width: 150%;
+    text-align: left;
+    transform: translateX(100%);
+    animation: moving 1s linear infinite;
+    animation-duration: 10s !important;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+@keyframes moving {
+    from{
+        transform:translateX(100%);
+    }
+    to{
+        transform:translateX(-100%);
+    }
+}
+
+.imgy {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100px;
+  }
+  
+.imgy:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
